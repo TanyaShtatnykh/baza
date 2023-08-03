@@ -1,0 +1,15 @@
+mixin welcome(modifier)
+  .welcome&attributes(attributes)
+    .welcome__info
+      h1.welcome__title Мы больше, чем кальянная
+      p.welcome__text Находимся на территории Лофт Этажи. Пройдите во внутренний двор, там увидите нас. Зайдите, снимите куртку и с кайфом проведете вечер. Или день. Или утро. Ну вы поняли)
+      button.welcome__link.welcome__link--btn(type="button") Забронировать стол
+      a.welcome__link(href="#") Оформить карту гостя
+      .welcome__socials
+        a.welcome__social-link(href="https://vk.com/baza_lounge")
+          include ./img/vk.svg
+        a.welcome__social-link(href="#")
+          include ./img/ig.svg
+    a.welcome__link-scroll(href="#about") Подробнее
+      include ./img/arrow_down.svg
+      include ./img/arrow_line.svg

@@ -1,0 +1,42 @@
+@import 'mixins';
+
+@font-face {
+  font-family: Mutabor;
+  font-weight: 400;
+  src: url("/./fonts/Mutabor.otf");
+}
+
+@font-face {
+  font-family: Manrope;
+  font-weight: 400 800;
+  src: url("/./fonts/Manrope.ttf");
+}
+
+body, ul, ol, p {
+  margin: 0;
+  padding: 0;
+  font-family: Manrope;
+  color: #ffffff;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input {
+  font-family: Mutabor;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  font-family: Mutabor;
+}
+
+@import './src/blocks/header/header';
+@import './src/blocks/welcome/welcome';
+@import './src/blocks/main-screen/main-screen';

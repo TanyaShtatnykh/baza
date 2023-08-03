@@ -1,0 +1,49 @@
+.header {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 36px 156px;
+
+  &__contacts {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 68px;
+  }
+  &__address {
+    margin-bottom: 26px;
+    font-size: 1em;
+    line-height: lh-to-pct(22, 16);
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__phone {
+    font-size: px-to-em(32);
+    line-height: lh-to-pct(44, 32);
+    font-weight: 800;
+    text-decoration: none;
+    text-align: center;
+    color: #FBFF4B;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__menu-list {
+    display: flex;
+  }
+  &__menu-item:nth-child(n+2) {
+    margin-left: 62px;
+  }
+  &__menu-link {
+    font-family: Mutabor;
+    font-size: px-to-em(24);
+    line-height: lh-to-pct(29, 24);
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
