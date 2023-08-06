@@ -1,0 +1,36 @@
+.slider {
+  max-width: 1440px;
+  width: 100%;
+
+  &__main-slide {
+    margin-bottom: 12px;
+  }
+  &__carousel {
+    display: flex !important;
+    max-height: 290px;
+    margin: 0 -36px;
+  }
+  &__slide {
+    object-fit: cover;
+    max-height: 670px;
+    &--mini {
+      width: 466px;
+      margin: 0 6px;
+      opacity: 0.35;
+    }
+  }
+  .prev, .next {
+    position: absolute;
+    z-index: 5;
+    top: 130px;
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  .prev {
+    left: 36px;
+  }
+  .next {
+    right: 36px;
+    rotate: 180deg;
+  }
+}

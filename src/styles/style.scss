@@ -18,6 +18,9 @@ body, ul, ol, p {
   font-family: Manrope;
   color: #ffffff;
 }
+main {
+  background-color: #000000;
+}
 
 ul, ol {
   list-style: none;
@@ -40,3 +43,5 @@ h1,h2,h3,h4,h5,h6 {
 @import './src/blocks/header/header';
 @import './src/blocks/welcome/welcome';
 @import './src/blocks/main-screen/main-screen';
+@import './src/blocks/about/about';
+@import './src/blocks/slider/slider';
