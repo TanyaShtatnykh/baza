@@ -1,6 +1,5 @@
 
 
-
 $('.slider__main-slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -21,6 +20,7 @@ $('.slider__carousel').slick({
     swipe: true,
     arrows: true,
     variableWidth: true,
-    prevArrow: '<img src="../img/prevArrow.svg" class="prev" alt="Назад">',
-    nextArrow: '<img src="../img/prevArrow.svg" class="next" alt="Назад">'
+    prevArrow: '<img src="img/prevArrow.svg" class="prev" alt="Назад">',
+    nextArrow: '<img src="img/prevArrow.svg" class="next" alt="Вперед">'
 });
+
