@@ -1,0 +1,20 @@
+.card {
+  background-color: #FBFF4B;
+  &__area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 68px 232px;
+  }
+  &__text {
+    max-width: 530px;
+    margin-left: 100px;
+    font-size: px-to-em(38);
+    line-height: 130%;
+    font-weight: 500;
+    color: #000000;
+  }
+}

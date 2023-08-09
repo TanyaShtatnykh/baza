@@ -1,5 +1,15 @@
 
 
+
+
+
+$(function() {
+  $('.header__menu-link').on('click', function() {
+    $('main').addClass('open__page');
+  });
+});
+
+
 $('.slider__main-slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -23,4 +33,8 @@ $('.slider__carousel').slick({
     prevArrow: '<img src="img/prevArrow.svg" class="prev" alt="Назад">',
     nextArrow: '<img src="img/prevArrow.svg" class="next" alt="Вперед">'
 });
-
+$(function() {
+  $('.welcome__link-scroll').on('click', function() {
+    $('main').addClass('open__page');
+  });
+});

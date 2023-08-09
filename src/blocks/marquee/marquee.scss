@@ -1,0 +1,46 @@
+.marquee {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  margin: 0 auto;
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__entry-text {
+    font-size: 1em;
+    line-height: lh-to-pct(22,16);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(251, 255, 75, 0.75);
+  }
+  &__entry, &__drink {
+    padding: 0 -100%;
+  }
+  &__entry-reverse, &__drink-reverse {
+    padding: 0 -200%;
+  }
+  &__drink-text {
+    font-family: Mutabor;
+    font-size: px-to-em(32);
+    line-height: lh-to-pct(39, 32);
+  }
+  &__entry, &__entry-reverse {
+    animation: toleft 50s linear infinite;
+  }
+  &__drink, &__drink-reverse {
+    animation: toright 40s linear infinite;
+  }
+  @keyframes toright {
+    0%   { transform: translate(-100%, 0); }
+    100% { transform: translate(0, 0); }
+  }
+  @keyframes toleft {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+  }
+}

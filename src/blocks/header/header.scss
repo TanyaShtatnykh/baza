@@ -18,6 +18,11 @@
     text-decoration: none;
     text-align: center;
     color: #ffffff;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.1);
+      color: #FBFF4B;
+    }
   }
   &__phone {
     font-size: px-to-em(32);
@@ -26,8 +31,12 @@
     text-decoration: none;
     text-align: center;
     color: #FBFF4B;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.1);
+      color: #ffffff;
+    }
   }
-
   &__block {
     display: flex;
     justify-content: space-between;
@@ -36,8 +45,14 @@
   &__menu-list {
     display: flex;
   }
-  &__menu-item:nth-child(n+2) {
-    margin-left: 62px;
+  &__menu-item {
+    transition: 1s;
+    &:nth-child(n+2) {
+      margin-left: 62px;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   &__menu-link {
     font-family: Mutabor;
@@ -45,5 +60,9 @@
     line-height: lh-to-pct(29, 24);
     text-decoration: none;
     color: #ffffff;
+    transition: 1s;
+    &:hover {
+      color: #FBFF4B;
+    }
   }
 }

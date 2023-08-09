@@ -6724,6 +6724,11 @@ ware@^1.2.0:
   dependencies:
     wrap-fn "^0.1.0"
 
+webticker@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/webticker/-/webticker-3.0.0.tgz"
+  integrity sha512-q1hxfmAExF6F6zJoLQik3uCRABQXFQFkczW3W/BWxfo4Cv/TEXtfk63CLkLgC22mBnWdRE24NfpeVLuhiweR5w==
+
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/which-boxed-primitive/-/which-boxed-primitive-1.0.2.tgz"

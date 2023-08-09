@@ -25,6 +25,7 @@
     "gulp-uglify": "^3.0.1",
     "imagemin-jpeg-recompress": "^6.0.0",
     "pump": "^3.0.0",
+    "webticker": "^3.0.0",
     "yarn": "^1.22.4"
   }
 }

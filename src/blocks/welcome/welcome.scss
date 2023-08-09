@@ -37,25 +37,44 @@
         color: #FFF;
         text-decoration: none;
         cursor: pointer;
-        &::after {
-            content: url(../img/card.svg);
-            width: 32px;
-            height: 32px;
+        transition: 1s;
+        svg {
             margin-left: 24px;
         }
-        &--btn::after {
-            content: url(../img/arrow_up.svg);
-            width: 32px;
-            height: 32px;
-            margin-left: 24px;
+        path {
+            transition: 1s;
+        }
+        &:hover {
+            background-color: #FBFF4B;
+            color: #000000;
+            path {
+                fill: #000000;
+                stroke: #000000;
+            }
+        }
+        &:active {
+            opacity: 0.5;
         }
     }
     &__socials {
         display: flex;
         align-self: center;
     }
-    &__social-link:nth-child(n+2) {
-        margin-left: 42px;
+    &__social-link {
+        &:nth-child(n+2) {
+            margin-left: 42px;
+        }
+        path {
+            transition: 1s;
+        }
+        &:hover {
+            path {
+                fill: #FBFF4B;
+            }
+        }
+        &:active {
+            opacity: 0.5;
+        }
     }
     &__link-scroll {
         display: flex;
@@ -70,7 +89,7 @@
         color: #FBFF4B;
         text-decoration: none;
         opacity: 0.55;
-        transition: 0.6s;
+        transition: 1s;
         svg:first-child {
             margin-top: 18px;
         }
