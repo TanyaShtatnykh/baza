@@ -1,36 +1,32 @@
 .slider {
   max-width: 1440px;
   width: 100%;
+  padding-bottom: 46px;
 
-  &__main-slide {
-    margin-bottom: 12px;
-  }
-  &__carousel {
-    display: flex !important;
-    max-height: 290px;
-    margin: 0 -36px;
-  }
   &__slide {
     object-fit: cover;
     max-height: 670px;
-    &--mini {
-      width: 466px;
-      margin: 0 6px;
-      opacity: 0.35;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+
+    li:nth-of-type(n+2) {
+      margin-left: 12px;
     }
-  }
-  .prev, .next {
-    position: absolute;
-    z-index: 5;
-    top: 130px;
-    cursor: pointer;
-    transition: 0.6s;
-  }
-  .prev {
-    left: 36px;
-  }
-  .next {
-    right: 36px;
-    rotate: 180deg;
+    button {
+      width: 22px;
+      height: 22px;
+      border-radius: 5px;
+      background: #FFFF3E;
+      color: transparent;
+      opacity: 0.2;
+      transition: 1s;
+    }
+    .slick-active button {
+      opacity: 1;
+    }
   }
 }

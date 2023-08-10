@@ -1,8 +1,5 @@
 mixin slider(pictures)
   .slider&attributes(attributes)
-    .slider__main-slide
+    .slider__slide
       each picture in pictures
         img.slider__slide(src=`${picture}`, alt="Интерьер")
-    .slider__carousel
-      each picture in pictures
-        img.slider__slide.slider__slide--mini(src=`${picture}`, alt="Интерьер")

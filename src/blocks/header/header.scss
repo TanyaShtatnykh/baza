@@ -2,16 +2,16 @@
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 50px 36px 156px;
+  padding: 30px 36px 82px;
 
   &__contacts {
     display: flex; 
     flex-direction: column;
     align-items: center;
-    margin-bottom: 68px;
+    margin-bottom: 20px;
   }
   &__address {
-    margin-bottom: 26px;
+    margin-bottom: 16px;
     font-size: 1em;
     line-height: lh-to-pct(22, 16);
     font-weight: 700;

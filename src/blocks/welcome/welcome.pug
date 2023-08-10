@@ -2,7 +2,7 @@ mixin welcome(modifier)
   .welcome&attributes(attributes)
     .welcome__info
       h1.welcome__title Мы больше, чем кальянная
-      p.welcome__text Находимся на территории Лофт Этажи. Пройдите во внутренний двор, там увидите нас. Зайдите, снимите куртку и с кайфом проведете вечер. Или день. Или утро. Ну вы поняли)
+      p.welcome__text Находимся на территории Лофт Этажи. Пройдите во&nbsp;внутренний двор, там увидите нас. Зайдите, снимите куртку и с кайфом проведете вечер. Или день. Или&nbsp;утро. Ну вы поняли)
       a.welcome__link(href="#reservation") Забронировать стол
         include ./img/arrow_up.svg
       a.welcome__link(href="https://wallet.ytimes.ru/home?a=dc3ea535-fa10-48c1-b549-b43212dc2608&s=f1cfa04f-1966-4083-bb86-019b226f6e25" target="_blank") Оформить карту гостя
@@ -14,4 +14,3 @@ mixin welcome(modifier)
           include ./img/ig.svg
     a.welcome__link-scroll(href="#about") Подробнее
       include ./img/arrow_down.svg
-      include ./img/arrow_line.svg
