@@ -2,6 +2,7 @@
 
 
 
+
 $(function() {
   $('.header__menu-link').on('click', function() {
     $('main').addClass('open__page');
@@ -13,7 +14,7 @@ $(function() {
 $('.slider__slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     fade: true,
     swipe: true,
     adaptiveHeight: true,

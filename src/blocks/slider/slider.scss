@@ -29,4 +29,27 @@
       opacity: 1;
     }
   }
+  .slick-arrow {
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    z-index: 10;
+    color: transparent;
+    background-color: #ffffff;
+    opacity: 0;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+      opacity: 0.03;
+    }
+  }
+  .slick-next {
+    top: 0;
+    right: 0;
+  }
+  .slick-prev {
+    top: 0;
+    left: 0;
+  }
 }

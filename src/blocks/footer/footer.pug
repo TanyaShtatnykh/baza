@@ -1,15 +1,20 @@
 mixin footer(modifier)
   .footer&attributes(attributes)
+    img.footer__logo(src="img/stripe.png", alt="Логотип")
     .footer__area
       .footer__column
         a.footer__link(href="#") Забронировать стол
-        a.footer__link(href="#") Мы вконтакте
-        a.footer__link(href="#") Инстаграм
+          include ./img/arrow_up.svg
+        a.footer__link.footer__link--vk(href="#") Мы вконтакте
+          include ./img/vk-f.svg
+        a.footer__link.footer__link--ig(href="#") Инстаграм
+          include ./img/ig-f.svg
       .footer__column
         ul.footer__menu
           li.footer__menu-item: a.footer__menu-link(href="#about") Про кальянную
           li.footer__menu-item: a.footer__menu-link(href="#menu") Меню
           li.footer__menu-item: a.footer__menu-link(href="#contacts") Контакты
         a.footer__link(href="#") Оформить карту гостя
-        p.footer__text 18+ Употребление&nbsp;табака&nbsp;вредит&nbsp;вашему здоровью
+          include ./img/card.svg
+        p.footer__text 18+ Употребление&nbsp;табака&nbsp;вредит&nbsp;вашему&nbsp;здоровью
 
