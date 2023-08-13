@@ -1,0 +1,96 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 62px 36px 86px;
+  
+  &__title {
+    align-self: center;
+    margin-bottom: 66px;
+    font-size: px-to-em(44);
+    line-height: lh-to-pct(54, 44);
+    color: #FBFF4B;
+  }
+  &__block {
+    margin: 16px 0;
+    padding: 40px 78px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #FBFF4B 0%, #FBFF4B 50.69%, #000 100%);
+  }
+  &__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: px-to-em(36);
+    line-height: lh-to-pct(44, 36);
+    color: #000;
+    text-align: center;
+    letter-spacing: 20px;
+    cursor: pointer;
+    transition: 1s;
+    &::after {
+      content: url(../img/menuArrow.svg);
+      width: 52px;
+      height: 52px;
+      rotate: 270deg;
+      transition: 1s;
+    }
+    &--open {
+      &::after {
+        rotate: 360deg;
+      }
+    }
+    &--hookah::before {
+      content: url(../img/hookah.png);
+      width: 132px;
+      height: 132px;
+    }
+    &--bar {
+      &::before {
+        content: url(../img/menuBar.png);
+        width: 132px;
+        height: 132px;
+      }
+    }
+    &--food::before {
+      content: url(../img/menuFood.png);
+      width: 132px;
+      height: 132px;
+    }
+  }
+  &__gallery {
+    display: none;
+    &--open {
+      display: flex;
+      max-width: 1368px;
+      margin: 0 auto;
+    }
+  }
+  &__photo {
+    max-width: 890px;
+    max-height: 1000px;
+    object-fit: contain;
+  }
+  .menu__slider {
+    display: flex;
+  }
+  .slick-list {
+    max-width: 890px;
+  }
+  .slick-arrow {
+    width: 238px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/arrow-next.png");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    color: transparent;
+    opacity: 0.25;
+    cursor: pointer;
+  }
+  .slick-prev {
+    rotate: 180deg;
+  }
+}

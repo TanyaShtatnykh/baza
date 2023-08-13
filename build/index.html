@@ -122,6 +122,47 @@
               </div>
             </section>
         </section>
+        <section class="form" id="reservation">
+          <h2 class="form__title">Забронировать стол</h2>
+          <form class="form__area">
+            <input class="form__field" type="text" placeholder="Как Вас зовут?" required>
+            <input class="form__field" type="tel" placeholder="Номер телефона" required>
+            <div class="form__wrapper">
+              <input class="form__field form__field--big" type="date">
+              <input class="form__field form__field--small" type="time">
+              <input class="form__field form__field--big" type="number" placeholder="Количество персон" min="1" value="1" max="30">
+            </div>
+            <input class="form__field" type="text" placeholder="Ваши пожелания">
+            <button class="form__button" type="submit">
+              Забронировать стол<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 24L25.3333 6.66667M25.3333 6.66667L25.3333 23.3067M25.3333 6.66667L8.69333 6.66667" stroke="#C9CBCA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </button>
+          </form>
+        </section>
+        <section class="menu" id="menu">
+          <h2 class="menu__title">Меню</h2>
+          <div class="menu__block">
+            <h2 class="menu__name menu__name--hookah">Кальяны</h2>
+          </div>
+          <div class="menu__gallery"><img class="menu__photo" src="img/hookah.jpg" alt="Меню с кальянами"></div>
+          <div class="menu__block menu__block--bar">
+            <h2 class="menu__name menu__name--bar">Бар</h2>
+          </div>
+          <div class="menu__gallery">
+            <div class="menu__slider"><img class="menu__photo" src="img/bar1.jpg" alt="Страница 1"><img class="menu__photo" src="img/bar2.jpg" alt="Страница 2"><img class="menu__photo" src="img/bar3.jpg" alt="Страница 3"><img class="menu__photo" src="img/bar4.jpg" alt="Страница 4"><img class="menu__photo" src="img/bar5.jpg" alt="Страница 5"></div>
+          </div>
+          <div class="menu__block">
+            <h2 class="menu__name menu__name--food">Кухня</h2>
+          </div>
+          <div class="menu__gallery"><img class="menu__photo" src="img/food.jpg" alt="Меню с едой"></div>
+        </section>
+        <div class="card">
+          <div class="card__area"><img class="card__qr" src="" alt="QR-код">
+            <p class="card__text">Оформи карту гостя получай&nbsp;кэшбэк от 5 до 15% и&nbsp;дополнительные бонусы</p>
+          </div>
+        </div>
         <section class="contacts" id="contacts">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__wrapper"><img class="contacts__map" src="img/map.png" alt="Наше местоположение">
@@ -135,7 +176,7 @@
                 <p class="contacts__text">пн-чт&nbsp;14:00&nbsp;-&nbsp;00:00 пт-&nbsp;сб&nbsp;14:00&nbsp;-&nbsp;02:00 вс&nbsp;14:00&nbsp;-&nbsp;00:00</p>
               </div><a class="contacts__item" href="mailto:baza_lounge@gmail.com">
                 <p class="contacts__name">По всем вопросам:</p>
-                <p class="contacts__text">baza_lounge@gmail.com</p></a><a class="contacts__button" href="#">Написать </a>
+                <p class="contacts__text">baza_lounge@gmail.com</p></a><a class="contacts__button" href="mailto:baza_lounge@gmail.com">Написать </a>
             </div>
           </div>
         </section>
