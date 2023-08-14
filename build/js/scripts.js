@@ -3,7 +3,14 @@
 
 
 
-
+$(function () {
+  $('.form__button').on('click', function() {
+    $('.modal').addClass('modal--open');
+    setTimeout(function () {
+      $('.modal').removeClass('modal--open');
+    }, 3000);
+  });
+});
 $(function() {
   $('.header__menu-link').on('click', function() {
     $('main').addClass('open__page');
@@ -35,11 +42,7 @@ $(function () {
   });
 });
 
-$(function() {
-  $('.welcome__link-scroll').on('click', function() {
-    $('main').addClass('open__page');
-  });
-});
+
 $('.slider__slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -51,3 +54,21 @@ $('.slider__slide').slick({
     autoplay: true,
     autoplaySpeed: 2000
 });
+$(function() {
+  $('.welcome__link-scroll').on('click', function() {
+    $('main').addClass('open__page');
+  });
+});
+$(document).ready(function () {
+  $('.verification').addClass('verification--open');
+  $('body').css({'overflow-y' : 'hidden', 'height' : '100vh'});
+  
+  $('.verification__btn').on('click', function() {
+    if ($(this).hasClass('verification__btn--yes')) {
+      $('.verification').removeClass('verification--open');
+      $('body').css({'overflow-y' : '', 'height' : ''});
+    } else {
+      $(location).attr('href', "https://www.google.ru/")
+    }
+  });
+})

@@ -7,7 +7,7 @@ mixin form(modifier)
       .form__wrapper
         input.form__field.form__field--big(type="date")
         input.form__field.form__field--small(type="time")
-        input.form__field.form__field--big(type="number" placeholder="Количество персон" min="1" value="1" max="30")
+        input.form__field.form__field--big(type="number" placeholder="Количество персон" min="1" max="30")
       input.form__field(type="text" placeholder="Ваши пожелания")
-      button.form__button(type="submit") Забронировать стол
+      button.form__button(type="button") Забронировать стол
         include ./img/arrow.svg

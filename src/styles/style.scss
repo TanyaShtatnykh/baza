@@ -22,11 +22,7 @@ body, ul, ol, p {
 }
 main {
   background-color: #000000;
-  // display: none;
 }
-// .open__page {
-//   display: block;
-// }
 
 ul, ol {
   list-style: none;
@@ -59,3 +55,5 @@ h1,h2,h3,h4,h5,h6 {
 @import './src/blocks/contacts/contacts';
 @import './src/blocks/form/form';
 @import './src/blocks/menu/menu';
+@import './src/blocks/verification/verification';
+@import './src/blocks/modal/modal';
