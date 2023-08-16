@@ -1,41 +1,46 @@
 .welcome {
-    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    height: auto;
+    max-width: 1440px;
+    min-height: 70vh;
     margin: 0 auto;
-    padding: 0 36px 36px;
+    padding: 0 36px 20px;
     
     &__info {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: flex-start;
         max-width: 490px;
+        max-height: 500px;
     }
     &__title {
-        max-width: 430px;
-        margin-bottom: 20px;
-        font-size: px-to-em(44);
-        line-height: lh-to-pct(66, 44);
+        max-width: 470px;
+        margin-bottom: 8px;
+        font-size: px-to-em(48);
+        line-height: lh-to-pct(59, 48);
         letter-spacing: 2px;
         color: #FBFF4B;
     }
     &__text {
-        max-width: 480px;
-        margin-bottom: 40px;
-        font-size: px-to-em(18);
-        line-height: lh-to-pct(30, 18);
+        max-width: 440px;
+        margin-bottom: 28px;
+        font-size: px-to-em(16);
+        line-height: 140%;
         font-weight: 400;
     }
     &__link {
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
-        padding: 24px 24px 24px 16px;
+        margin-bottom: 12px;
+        padding: 20px 20px 20px 16px;
         border: 3px solid #FBFF4B;
         background-color: transparent;
         font-family: Mutabor;
-        font-size: px-to-em(26);
-        line-height: lh-to-pct(32, 26);
+        font-size: px-to-em(24);
+        line-height: lh-to-pct(29, 24);
         color: #FFF;
         text-decoration: none;
         cursor: pointer;
@@ -85,16 +90,16 @@
         align-items: center;
         max-width: 150px;
         margin: 0 auto;
-        font-size: px-to-em(20);
-        line-height: lh-to-pct(27, 20);
+        font-size: px-to-em(16);
+        line-height: 140%;
         color: #ffffff;
         font-weight: 700;
         text-decoration: none;
         opacity: 0.55;
-        transform: translateY(-72px);
+        // transform: translateY(-72px);
         transition: 1s;
         svg:first-child {
-            margin-top: 20px;
+            margin-top: 4px;
         }
         &:hover {
             opacity: 1;
