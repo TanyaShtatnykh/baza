@@ -1,24 +1,30 @@
 .slider {
   max-width: 1440px;
   width: 100%;
-  padding-bottom: 46px;
+  height: 100%;
   
   &__slide {
+    max-width: 100%;
+    max-height: 520px;
     object-fit: cover;
-    max-height: 670px;
   }
   .slick-dots {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 24px;
+    margin-top: 16px;
 
-    li:nth-of-type(n+2) {
+    li {
+      width: 12px;
+      height: 12px;
+      &:nth-of-type(n+2) {
       margin-left: 12px;
+      }
     }
     button {
-      width: 22px;
-      height: 22px;
+      width: 12px;
+      height: 12px;
+      border: none;
       border-radius: 5px;
       background: #FFFF3E;
       color: transparent;

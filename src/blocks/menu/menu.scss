@@ -4,18 +4,18 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 62px 36px 86px;
+  padding: 60px 36px;
   
   &__title {
     align-self: center;
-    margin-bottom: 66px;
+    margin-bottom: 40px;
     font-size: px-to-em(44);
     line-height: lh-to-pct(54, 44);
     color: #FBFF4B;
   }
   &__block {
-    margin: 16px 0;
-    padding: 40px 78px;
+    margin: 12px 0;
+    padding: 30px 78px;
     border-radius: 20px;
     background: linear-gradient(135deg, #FBFF4B 0%, #FBFF4B 50.69%, #000 100%);
   }
@@ -44,20 +44,14 @@
     }
     &--hookah::before {
       content: url(../img/hookah.png);
-      width: 132px;
-      height: 132px;
     }
     &--bar {
       &::before {
         content: url(../img/menuBar.png);
-        width: 132px;
-        height: 132px;
       }
     }
     &--food::before {
       content: url(../img/menuFood.png);
-      width: 132px;
-      height: 132px;
     }
   }
   &__gallery {

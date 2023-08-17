@@ -1,27 +1,28 @@
 .about {
     display: flex;
     flex-direction: column;
+    // justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1440px;
-    min-height: 100vh;
+    // min-height: 100vh;
     margin: 0 auto;
-    padding: 20px 36px;
+    padding: 40px 36px;
+    // padding: 10px 36px 40px;
 
   &__title {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     font-size: px-to-em(44);
     line-height: lh-to-pct(54, 44);
     color: #FBFF4B;
     text-align: center;
   }
   &__text {
-    align-self: flex-end;
     max-width: 710px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-size: px-to-em(18);
     line-height: lh-to-pct(30, 18);
-    text-align: right;
+    text-align: center;
     font-weight: 600;
   }
 }
