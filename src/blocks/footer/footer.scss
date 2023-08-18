@@ -10,7 +10,7 @@
     justify-content: space-between;
     width: 100%;
     max-width: 1440px;
-    padding: 42px 36px 66px;
+    padding: 30px 36px 60px;
   }
   &__column {
     display: flex;
@@ -24,11 +24,11 @@
   &__link {
     display: flex;
     align-items: center;
-    padding: 24px 16px;
+    padding: 16px;
     border: 3px solid #FBFF4B;
     font-family: Mutabor; 
-    font-size: px-to-em(26);
-    line-height: lh-to-pct(32, 26);
+    font-size: px-to-em(20);
+    line-height: lh-to-pct(24, 20);
     color: #FFF;
     text-decoration: none;
     transition: 1s;

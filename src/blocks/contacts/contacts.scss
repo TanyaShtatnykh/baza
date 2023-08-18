@@ -1,11 +1,11 @@
 .contacts {
   width: 100%;
   max-width: 1440px;
-  min-height: 100vh;
   margin: 0 auto;
-  padding: 30px 200px 60px 180px;
+  padding: 60px 220px;
+
   &__title {
-    margin-bottom: 62px;
+    margin-bottom: 40px;
     font-size: px-to-em(44);
     line-height: lh-to-pct(54, 44);
     text-align: center;
@@ -14,41 +14,45 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  &__map {
+    object-fit: contain;
   }
   &__info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 100px;
+    margin-left: 20px;
   }
   &__item {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    max-width: 350px;
     text-decoration: none;
   }
   &__name {
-    margin: 0 22px 22px 0;
-    font-size: 2em;
+    margin: 0 16px 16px 0;
+    font-size: px-to-em(28);
+    line-height: lh-to-pct(38, 28);
     font-weight: 800;
-    line-height: px-to-em(44, 32);
     color: #FFF;
   }
   &__text {
-    margin-bottom: 22px;
-    font-size: px-to-em(26);
+    margin-bottom: 16px;
+    font-size: px-to-em(24);
+    line-height: lh-to-pct(33, 24);
     font-weight: 400;
-    line-height: lh-to-pct(36, 26);
     color: #FBFF4B;
   }
   &__button {
     margin-top: 20px;
-    padding: 20px 64px;
+    padding: 16px 64px;
     border: 3px solid #FBFF4B;
-    font-size: 2em;
-    font-weight: 900;
-    line-height: lh-to-pct(39, 22);
+    font-family: Mutabor;
+    font-size: px-to-em(20);
+    line-height: lh-to-pct(24, 20);
     color: #ffffff;
     text-decoration: none;
     transition: 1s;

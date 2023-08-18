@@ -7,13 +7,13 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 68px 232px;
+    padding: 40px 240px;
   }
   &__text {
-    max-width: 530px;
-    margin-left: 100px;
-    font-size: px-to-em(38);
-    line-height: 130%;
+    max-width: 450px;
+    margin-left: 50px;
+    font-size: px-to-em(32);
+    line-height: lh-to-pct(43, 32);
     font-weight: 500;
     color: #000000;
   }

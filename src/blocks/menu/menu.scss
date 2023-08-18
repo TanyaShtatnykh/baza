@@ -13,16 +13,14 @@
     line-height: lh-to-pct(54, 44);
     color: #FBFF4B;
   }
-  &__block {
-    margin: 12px 0;
-    padding: 30px 78px;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #FBFF4B 0%, #FBFF4B 50.69%, #000 100%);
-  }
   &__name {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 12px 0;
+    padding: 30px 78px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #FBFF4B 0%, #FBFF4B 50.69%, #000 100%);
     font-size: px-to-em(36);
     line-height: lh-to-pct(44, 36);
     color: #000;
@@ -54,24 +52,28 @@
       content: url(../img/menuFood.png);
     }
   }
-  &__gallery {
+  &__photo {
     display: none;
     &--open {
       display: flex;
-      max-width: 1368px;
+      max-width: 890px;
       margin: 0 auto;
+      max-height: 90vh;
+      object-fit: contain;
     }
   }
-  &__photo {
-    max-width: 890px;
-    max-height: 1000px;
-    object-fit: contain;
-  }
   .menu__slider {
-    display: flex;
+    position: absolute;
+    top: -1000000%;
+    &--open {
+      position: relative;
+      top: 0;
+      display: flex;
+      justify-content: center;
+    }
   }
   .slick-list {
-    max-width: 890px;
+    max-width: 700px;
   }
   .slick-arrow {
     width: 238px;
@@ -86,5 +88,10 @@
   }
   .slick-prev {
     rotate: 180deg;
+  }
+  &__slide {
+    max-width: 800px;
+    max-height: 90vh;
+    object-fit: contain;
   }
 }
