@@ -2,7 +2,6 @@
 
 
 
-
 $(function () {
   $('.form__button').on('click', function() {
     $('.modal').addClass('modal--open');
@@ -11,6 +10,7 @@ $(function () {
     }, 3000);
   });
 });
+
 $(function() {
   $('.header__menu-link').on('click', function() {
     $('main').addClass('open__page');

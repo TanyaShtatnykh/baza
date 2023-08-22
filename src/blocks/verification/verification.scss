@@ -52,4 +52,43 @@
       opacity: 0.5;
     }
   }
+  @media screen and (max-width: 991.98px) {
+    &__area {
+      width: 600px;
+      padding: 32px 48px;
+      background-size: contain;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__area {
+      width: 400px;
+      padding: 32px;
+      background-position: center center;
+    }
+    &__text {
+      margin-bottom: 20px;
+      font-size: px-to-em(24);
+    }
+    &__btn {
+      min-width: 210px;
+      margin-bottom: 16px;
+      padding: 16px;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &__area {
+      width: 280px;
+      padding: 16px;
+    }
+    &__text {
+      margin-bottom: 16px;
+      font-size: px-to-em(16);
+    }
+    &__btn {
+      min-width: 180px;
+      font-size: px-to-em(16);
+      margin-bottom: 12px;
+      padding: 12px;
+    }
+  }
 }
