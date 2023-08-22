@@ -51,6 +51,7 @@
     padding: 20px 36px;
   }
   @media screen and (max-width: 575.98px) {
+    padding: 20px 16px;
     &__title {
       margin-bottom: 10px;
       font-size: px-to-em(20);
@@ -58,7 +59,7 @@
     }
     &__text {
       margin-bottom: 12px;
-      max-width: 400px;
+      max-width: 300px;
       font-size: px-to-em(10);
       line-height: 112%;
     }

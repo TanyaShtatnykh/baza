@@ -178,7 +178,6 @@
       transition: 1s;
     }
     &__link {
-      justify-content: space-between;
       width: 100%;
       max-width: 312px;
     }
@@ -198,21 +197,20 @@
   @media screen and (max-width: 575.98px) {
     justify-content: flex-start;
     min-height: 65vh;
-    padding: 0 36px;
+    padding: 0 16px;
 
     &__title {
-      max-width: 210px;
       font-size: px-to-em(20);
       line-height: lh-to-pct(24, 20);
     }
     &__text {
       max-width: 314px;
-      margin-bottom: 12px;
+      margin-bottom: 24px;
       font-size: px-to-em(10);
       line-height: 112%;
     }
     &__menu-list {
-      margin-bottom: 12px;
+      margin-bottom: 24px;
     }
     &__menu-item:nth-of-type(n+2) {
       margin-top: 6px;
@@ -223,7 +221,7 @@
     }
     &__link {
       justify-content: center;
-      max-width: 180px;
+      max-width: 200px;
       margin-bottom: 6px;
       padding: 12px;
       font-size: px-to-em(10);
@@ -233,6 +231,7 @@
       }
     }
     &__social-link {
+      margin-top: 4px;
       svg {
         width: 24px;
         height: 24px;
