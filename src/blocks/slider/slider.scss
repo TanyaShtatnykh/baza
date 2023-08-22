@@ -82,4 +82,26 @@
       }
     }
   }
+  @media screen and (max-width: 575.98px) {
+    &__slide {
+      max-height: 280px;
+    }
+    .slick-dots {
+      margin-top: 8px;
+      li {
+        width: 4px;
+        height: 4px;
+        &:nth-of-type(n+2) {
+          margin-left: 4px;
+        }
+      }
+      button {
+        width: 4px;
+        height: 4px;
+      }
+    }
+    .slick-arrow {
+      width: 20px;
+    }
+  }
 }
