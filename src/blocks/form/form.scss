@@ -11,6 +11,7 @@
     margin-bottom: 40px;
     font-size: px-to-em(44);
     line-height: lh-to-pct(54, 44);
+    font-weight: 400;
     text-align: center;
     color: #FBFF4B;
   }
@@ -41,15 +42,15 @@
       color: rgba(255, 255, 255, 1);
     }
     &--big {
-      min-width: 285px;
+      width: 35%;
     }
     &--small {
-      min-width: 184px;
+      width: 25%;
       margin: 0 20px 50px;
     }
   }
   input::-webkit-calendar-picker-indicator {
-    width: 60%;
+    width: 40%;
     opacity: 0;
   }
   input::-webkit-inner-spin-button {
@@ -84,6 +85,79 @@
     }
     &:active {
       opacity: 0.5;
+    }
+  }
+  @media screen and (max-width: 1199.98px) {
+    padding: 0 50px 60px;
+    &__title {
+      margin-bottom: 20px;
+      font-size: px-to-em(36);
+      line-height: lh-to-pct(44, 36);
+    }
+    &__button {
+      margin-top: 0;
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    padding: 0 50px 60px;
+
+    &__area {
+      padding: 0 30px;
+    }
+    &__title {
+      font-size: px-to-em(28);
+      line-height: lh-to-pct(34, 28);
+    }
+    &__button {
+      font-size: px-to-em(16);
+      line-height: lh-to-pct(19, 16);
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    padding: 0 36px 20px;
+    background-size: 80% auto;
+
+    &__area {
+      padding: 0;
+    }
+    &__button {
+      font-size: px-to-em(12);
+      line-height: lh-to-pct(15, 12);
+    }
+    &__field {
+      margin-bottom: 30px;
+      font-size: px-to-em(16);
+      line-height: lh-to-pct(22, 16);
+      &--small {
+        margin: 0 16px 30px;
+      }
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &__title {
+      font-size: px-to-em(20);
+      line-height: lh-to-pct(24, 20);
+    }
+    &__wrapper {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &__field {
+      margin-bottom: 20px;
+      font-size: px-to-em(14);
+      line-height: lh-to-pct(19, 14);
+      &--big {
+        width: 100%;
+      }
+      &--small {
+        width: 100%;
+        margin: 0 0 20px;
+      }
     }
   }
 }
