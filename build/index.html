@@ -145,11 +145,11 @@
         <section class="form" id="reservation">
           <h2 class="form__title">Забронировать стол</h2>
           <form class="form__area">
-            <input class="form__field" type="text" placeholder="Как Вас зовут?" required>
-            <input class="form__field" type="tel" placeholder="Номер телефона" required>
+            <input class="form__field" type="text" placeholder="Как Вас зовут?">
+            <input class="form__field" type="tel" placeholder="Номер телефона">
             <div class="form__wrapper">
-              <input class="form__field form__field--big" type="date">
-              <input class="form__field form__field--small" type="time">
+              <input class="form__field form__field--big" type="text" placeholder="Выберите дату" onfocus="(this.type = 'date')">
+              <input class="form__field form__field--small" type="text" placeholder="Время" onfocus="(this.type = 'time')">
               <input class="form__field form__field--big" type="number" placeholder="Количество персон" min="1" max="30">
             </div>
             <input class="form__field" type="text" placeholder="Ваши пожелания">
@@ -219,6 +219,12 @@
           <p class="verification__text">Для посещения сайта подтвердите, что вам есть 18 лет</p>
           <button class="verification__btn verification__btn--yes" type="button">Подтвердить</button>
           <button class="verification__btn verification__btn--no" type="button">Отмена</button>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__content">
+          <p class="modal__text">Спасибо, что выбрали нас</p>
+          <p class="modal__text">Администратор свяжется с&nbsp;Вами для подтверждения бронирования</p>
         </div>
       </div>
     <script src="js/scripts.js"></script>

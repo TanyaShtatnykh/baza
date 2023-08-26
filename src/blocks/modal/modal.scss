@@ -32,4 +32,36 @@
     color: #FBFF4B;
     text-align: center;
   }
+  @media screen and (max-width: 1199.98px) {
+    &__content {
+      padding: 100px;
+    }
+    &__text {
+      max-width: 600px;
+      margin-bottom: 30px;
+      font-size: px-to-em(28);
+      line-height: lh-to-pct(34, 28);
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    &__content {
+      padding: 50px 50px 20px;
+    }
+    &__text {
+      max-width: 400px;
+      font-size: px-to-em(20);
+      line-height: lh-to-pct(24, 20);
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &__content {
+      padding: 30px 36px 10px;
+    }
+    &__text {
+      max-width: 240px;
+      margin-bottom: 20px;
+      font-size: px-to-em(12);
+      line-height: lh-to-pct(15, 12);
+    }
+  }
 }
