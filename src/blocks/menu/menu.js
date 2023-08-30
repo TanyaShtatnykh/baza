@@ -8,15 +8,31 @@ $(function () {
     $(this).toggleClass('menu__name--open');
     $(this).next('.menu__photo').toggleClass('menu__photo--open');
     $(this).next('.menu__slider').toggleClass('menu__slider--open');
+    
+    if ($(this).hasClass('menu__name--open')) {
+      $('html, body').animate({
+        scrollTop: $('.menu__name--open').offset().top
+      }, 'fast');
+    } else {
+      $('html, body').animate({
+        scrollTop: $('.menu__title').offset().top
+      }, 'fast');
+    }
 
-    if ($(this).hasClass('menu__name--bar')) {
-      $('.menu__slider').not('.slick-initialized').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: false,
-        swipe: true,
-      });
-    };
+    $('.menu__slider').not('.slick-initialized').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      swipe: true,
+      responsive: [
+        {
+          breakpoint: 767.98,
+          settings: {
+            arrows: false,
+          }
+        }
+      ]
+    });
   });
 });

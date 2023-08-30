@@ -8,75 +8,82 @@
   
   &__title {
     align-self: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: px-to-em(44);
     line-height: lh-to-pct(54, 44);
+    font-weight: 400;
     color: #FBFF4B;
   }
   &__name {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 12px 0;
-    padding: 30px 78px;
+    margin: 10px 0;
+    padding: 10px 78px;
     border-radius: 20px;
     background: linear-gradient(135deg, #FBFF4B 0%, #FBFF4B 50.69%, #000 100%);
     font-size: px-to-em(36);
     line-height: lh-to-pct(44, 36);
+    font-weight: 400;
     color: #000;
     text-align: center;
-    letter-spacing: 20px;
+    letter-spacing: 6px;
     cursor: pointer;
-    transition: 1s;
     &::after {
-      content: url(../img/menuArrow.svg);
+      content: ' ';
+      background: url("../img/menuArrow.svg") no-repeat center;
+      background-size: contain;
       width: 52px;
       height: 52px;
       rotate: 270deg;
       transition: 1s;
+      opacity: 0.5;
+    }
+    &:hover::after {
+      opacity: 1;
+      transform: scale(1.2);
     }
     &--open {
       &::after {
         rotate: 360deg;
       }
     }
-    &--hookah::before {
-      content: url(../img/hookah.png);
+    &::before {
+      content: ' ';
+      width: 100px;
+      height: 100px;
     }
-    &--bar {
-      &::before {
-        content: url(../img/menuBar.png);
-      }
+    &--hookah::before {
+      background: url("../img/hookah.png") no-repeat center;
+      background-size: contain;
+    }
+    &--bar::before {
+      background: url("../img/menuBar.png") no-repeat center;
+      background-size: contain;
     }
     &--food::before {
-      content: url(../img/menuFood.png);
+      background: url("../img/menuFood.png") no-repeat center;
+      background-size: contain;
     }
-  }
-  &__photo {
-    display: none;
-    &--open {
-      display: flex;
-      max-width: 890px;
-      margin: 0 auto;
-      max-height: 90vh;
-      object-fit: contain;
-    }
+
   }
   .menu__slider {
-    position: absolute;
-    top: -1000000%;
+    height: 0;
+    transform: scale(0);
     &--open {
-      position: relative;
-      top: 0;
       display: flex;
       justify-content: center;
+      height: auto;
+      transform: scale(1);
     }
   }
   .slick-list {
     max-width: 700px;
+    margin: 0 auto;
   }
   .slick-arrow {
-    width: 238px;
+    width: 80%;
+    padding: 0;
     border: none;
     background-color: transparent;
     background-image: url("../img/arrow-next.png");
@@ -85,13 +92,79 @@
     color: transparent;
     opacity: 0.25;
     cursor: pointer;
+    transition: 1s;
+    &:hover {
+      opacity: 1;
+    }
   }
   .slick-prev {
     rotate: 180deg;
   }
-  &__slide {
-    max-width: 800px;
-    max-height: 90vh;
+  .slick-slide {
+    max-width: 700px;
+    max-height: 100vh;
     object-fit: contain;
+  }
+  @media screen and (max-width: 1199.98px) {
+    padding: 40px 36px;
+  
+    &__title {
+      margin-bottom: 10px;
+      font-size: px-to-em(36);
+    }
+    &__name {
+      font-size: px-to-em(32);
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    &__title {
+      margin-bottom: 20px;
+      font-size: px-to-em(28);
+    }
+    &__name {
+      font-size: px-to-em(24);
+      &:hover::after {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    .slick-arrow {
+      max-width: 50px;
+      background-size: contain;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .slick-slide {
+      max-height: 90vh;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__name {
+      padding: 10px;
+    }
+    .slick-slide {
+      max-height: 80vh;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    padding: 40px 16px;
+    &__title {
+      font-size: px-to-em(20);
+    }
+    &__name {
+      margin: 4px 0;
+      padding: 10px;
+      font-size: px-to-em(16);
+      &::before {
+        width: 50px;
+        height: 50px;
+      }
+      &::after {
+        width: 32px;
+        height: 32px;
+        rotate: 270deg;
+      }
+    }
   }
 }
