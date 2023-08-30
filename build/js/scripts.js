@@ -1,6 +1,4 @@
 
-
-
 $('.available__options').slick({
   slidesToShow: 7,
   arrows: false,
@@ -51,6 +49,8 @@ $('.available__options').slick({
     },
   ]
 });
+
+
 $(function () {
   $('.form__button').on('click', function(e) {
     e.preventDefault();
@@ -65,6 +65,7 @@ $(function() {
     $('main').addClass('open__page');
   });
 });
+
 
 
 $(function () {
@@ -92,22 +93,20 @@ $(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
-      dots: false,
+      dots: true,
       swipe: true,
       responsive: [
         {
           breakpoint: 767.98,
           settings: {
-            adaptiveHeight: true,
             arrows: false,
-            dots: true,
+            adaptiveHeight: true,
           }
         }
       ]
     });
   });
 });
-
 
 $('.slider__slide').slick({
     slidesToShow: 1,

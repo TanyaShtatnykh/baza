@@ -105,6 +105,33 @@
     max-height: 100vh;
     object-fit: contain;
   }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    width: 0;
+    height: 0;
+    margin: 6px 0;
+    transform: scale(0);
+    li {
+      width: 8px;
+      height: 8px;
+      margin: 0 3px;
+    }
+    button {
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background: #FFFF3E;
+      opacity: 0.2;
+      color: transparent;
+      transition: 1s;
+    }
+  }
+  .slick-active button {
+    opacity: 1;
+  }
   @media screen and (max-width: 1199.98px) {
     padding: 40px 36px;
   
@@ -143,38 +170,22 @@
     .menu__slider {
       &--open {
         display: block;
-        padding: 0 10px 8px;
+        padding: 0 10px;
       }
     }
     &__name {
       padding: 10px;
     }
+    .slick-prev {
+      display: none;
+    }
     .slick-slide {
       max-height: 80vh;
     }
     .slick-dots {
-      display: flex;
-      justify-content: center;
-      margin: 6px 0;
-      li {
-        width: 8px;
-        height: 8px;
-        margin: 0 3px;
-      }
-      button {
-        width: 8px;
-        height: 8px;
-        padding: 0;
-        border: none;
-        border-radius: 50%;
-        background: #FFFF3E;
-        opacity: 0.2;
-        color: transparent;
-        transition: 1s;
-      }
-    }
-    .slick-active button {
-      opacity: 1;
+      width: auto;
+      height: auto;
+      transform: scale(1);
     }
   }
   @media screen and (max-width: 575.98px) {
@@ -193,7 +204,6 @@
       &::after {
         width: 32px;
         height: 32px;
-        rotate: 270deg;
       }
     }
   }

@@ -23,15 +23,14 @@ $(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
-      dots: false,
+      dots: true,
       swipe: true,
       responsive: [
         {
           breakpoint: 767.98,
           settings: {
-            adaptiveHeight: true,
             arrows: false,
-            dots: true,
+            adaptiveHeight: true,
           }
         }
       ]
