@@ -29,7 +29,9 @@ $(function () {
         {
           breakpoint: 767.98,
           settings: {
+            adaptiveHeight: true,
             arrows: false,
+            dots: true,
           }
         }
       ]

@@ -1,5 +1,6 @@
 
 
+
 $('.available__options').slick({
   slidesToShow: 7,
   arrows: false,
@@ -50,7 +51,6 @@ $('.available__options').slick({
     },
   ]
 });
-
 $(function () {
   $('.form__button').on('click', function(e) {
     e.preventDefault();
@@ -98,7 +98,9 @@ $(function () {
         {
           breakpoint: 767.98,
           settings: {
+            adaptiveHeight: true,
             arrows: false,
+            dots: true,
           }
         }
       ]
