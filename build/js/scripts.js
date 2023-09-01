@@ -66,8 +66,6 @@ $(function() {
   });
 });
 
-
-
 $(function () {
   $('.menu__name').on('click', function() {
     if (!$(this).hasClass('menu__name--open')) {
@@ -107,6 +105,8 @@ $(function () {
     });
   });
 });
+
+
 
 $('.slider__slide').slick({
     slidesToShow: 1,

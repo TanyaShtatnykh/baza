@@ -1,14 +1,11 @@
 .about {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1440px;
-    // min-height: 100vh;
     margin: 0 auto;
-    padding: 40px 36px;
-    // padding: 10px 36px 40px;
+    padding: 40px 36px 10px;
 
   &__title {
     margin-bottom: 16px;
@@ -49,10 +46,10 @@
     }
   }
   @media screen and (max-width: 767.98px) {
-    padding: 20px 36px;
+    padding: 20px 36px 0;
   }
   @media screen and (max-width: 575.98px) {
-    padding: 20px 16px;
+    padding: 20px 16px 0;
     &__title {
       margin-bottom: 10px;
       font-size: px-to-em(20);
